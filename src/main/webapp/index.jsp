@@ -9,7 +9,7 @@
     <form action="cadastrar" method="post">
         <p>Informe o nome: <input type="string" name="nome" required></p>
         <p>Informe o cpf: <input type="string" name="cpf" required></p>
-        <input type="submit" value="calcular" >
+        <input type="submit" value="Cadastrar" >
     </form>
 </div>
 
