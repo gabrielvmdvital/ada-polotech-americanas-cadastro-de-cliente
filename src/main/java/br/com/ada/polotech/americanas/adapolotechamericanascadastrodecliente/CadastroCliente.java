@@ -21,12 +21,14 @@ public class CadastroCliente extends HttpServlet {
         String nome = request.getParameter("nome");
         String cpf = request.getParameter("cpf");
         var usuarios = recuperaUsuarios(request);
-        usuarios.add(new Usuario(nome, cpf));
+        Usuario usuario = new Usuario(nome, cpf);
 
-        request.setAttribute("historico_usuarios", usuarios);
-        request.getRequestDispatcher("/historico.jsp").forward(request, response);
-       // PrintWriter out = response.getWriter();
-        //out.println("<html><body>O cliente: " + nome + ", CPF: " + cpf + " foi cadastrado com sucesso </body></html>");
+        usuarios.add(usuario);
+
+        request.setAttribute("usuario", usuario);
+        request.getRequestDispatcher("/cadastrado.jsp").forward(request, response);
+        //PrintWriter out = response.getWriter();
+        // out.println("<html><body>O cliente: " + nome + ", CPF: " + cpf + " foi cadastrado com sucesso </body></html>");
 
     }
 

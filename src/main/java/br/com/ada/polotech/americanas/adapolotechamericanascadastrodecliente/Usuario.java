@@ -9,6 +9,8 @@ public class Usuario {
         setCpf(cpf);
     }
 
+    public Usuario(){}
+
     public String getNome() {
         return nome;
     }

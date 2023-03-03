@@ -11,6 +11,7 @@
         <p>Informe o cpf: <input type="string" name="cpf" required></p>
         <input type="submit" value="Cadastrar" >
     </form>
+    <a href="/app/historico">Historico</a>
 </div>
 
 <br/>
